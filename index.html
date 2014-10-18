@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-ng-app="barbacarsApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Barbacars</title>
+	<link rel="stylesheet" href="">
+	<script src="libs/angular.min.js"></script>
+	<script src="libs/angular-route.min.js"></script>
+	<script src="barbacars.js"></script>
+	<script src="controllers/main.js"></script>
+	<script src="controllers/about.js"></script>
+	<script src="controllers/contact.js"></script>
+</head>
+<body data-ng-controller="mainController">
+	<a href="/">
+		<img src="static/images/box-br.jpg" alt="logo" width="50">
+	</a>
+	<header>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header><!-- /header -->
+
+	<div id="main">
+		<div ng-view></div>
+	</div>
+
+	<footer>
+		By <a href="http://barbaroxa.com.br">Barbaroxa</a>
+	</footer>
+</body>
+</html>
